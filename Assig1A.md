@@ -2,9 +2,7 @@
 title: "Machine Learning Assignment"
 author: "Jose Noriega"
 date: "3/3/2020"
-output:
-  html_document: default
-  word_document: default
+output: html_document
 ---
 
 ## Summary
@@ -87,8 +85,7 @@ Desicion Tree Model: 73,20 %
 Generalized Boosted Model:95.92%
 Random Forrest Model: 99,30%
 
-Considering that Random Forrest Model provided more accuracy results, we consider it for our final 
-prediction of 20 different test cases
+Considering that Random Forrest Model provided more accuracy results, we consider it for our final prediction of 20 different test cases
 
 ```{r, results=FALSE}
 RandomForrestPred<-predict(RandomForrest,newdata = testing,type = "class")
